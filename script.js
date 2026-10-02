@@ -1,60 +1,13 @@
-const qs = (s) => document.querySelector(s);
-const qsa = (s) => [...document.querySelectorAll(s)];
-
-qs('#year').textContent = new Date().getFullYear();
-
-const navToggle = qs('.nav-toggle');
-const nav = qs('.nav');
-navToggle?.addEventListener('click', () => nav.classList.toggle('open'));
-qsa('.nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
-
-const itemField = qs('#itemField');
-qsa('.order-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    itemField.value = btn.dataset.item || '';
-    qs('#order').scrollIntoView({behavior:'smooth'});
-    setTimeout(() => itemField.focus(), 450);
-  });
-});
-qsa('[data-item-link]').forEach(btn => {
-  btn.addEventListener('click', () => setTimeout(() => { itemField.value = btn.dataset.itemLink || ''; }, 250));
-});
-qsa('[data-service]').forEach(btn => {
-  btn.addEventListener('click', () => setTimeout(() => { itemField.value = btn.dataset.service || ''; }, 250));
-});
-
-qs('#orderForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const data = new FormData(e.currentTarget);
-  const message = [
-    'Hello NobleBridge Global, I would like to make an enquiry/order.',
-    `Name: ${data.get('name')}`,
-    `Phone: ${data.get('phone')}`,
-    `Request type: ${data.get('type')}`,
-    `Item/service: ${data.get('item') || 'Not specified'}`,
-    `Quantity: ${data.get('quantity') || '1'}`,
-    `Preferred delivery area: ${data.get('location') || 'Not specified'}`,
-    `Details: ${data.get('details') || 'Not specified'}`
-  ].join('\n');
-  const url = 'https://wa.me/2349058961160?text=' + encodeURIComponent(message);
-  window.open(url, '_blank', 'noopener');
-});
-
-const modal = qs('#cacModal');
-const openCac = qs('#openCac');
-const closeCac = qs('#closeCac');
-openCac?.addEventListener('click', () => { modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); });
-closeCac?.addEventListener('click', () => { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); });
-modal?.addEventListener('click', (e) => { if(e.target.dataset.close) { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); }});
-document.addEventListener('keydown', (e) => { if(e.key === 'Escape') { modal?.classList.remove('open'); modal?.setAttribute('aria-hidden','true'); }});
-
-// Subtle reveal animation
-const revealEls = qsa('.pillar,.product-card,.project-card,.document-card,.order-form,.promo-inner');
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){ entry.target.classList.add('revealed'); observer.unobserve(entry.target); }
-    });
-  }, {threshold:.08});
-  revealEls.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
-}
+const menuToggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.nav');
+if(menuToggle){menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));});}
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav?.classList.remove('open');menuToggle?.setAttribute('aria-expanded','false')}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const lightbox=document.getElementById('lightbox');const lightboxImage=document.getElementById('lightboxImage');
+document.querySelectorAll('[data-lightbox]').forEach(btn=>btn.addEventListener('click',()=>{lightboxImage.src=btn.dataset.lightbox;lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false')}));
+function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightboxImage.src=''}
+document.querySelector('.lightbox-close')?.addEventListener('click',closeLightbox);lightbox?.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+const form=document.getElementById('contactForm');const toast=document.getElementById('toast');
+form?.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form);const service=data.get('service');const name=data.get('name');const phone=data.get('phone');const message=data.get('message');const text=`Hello NobleBridge Global,%0A%0AI'd like to make an enquiry.%0A%0AService: ${encodeURIComponent(service)}%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ARequest: ${encodeURIComponent(message)}%0A%0AThank you.`;toast.classList.add('show');setTimeout(()=>{window.open(`https://wa.me/2349058961160?text=${text}`,'_blank','noopener,noreferrer');toast.classList.remove('show')},500)});
+document.getElementById('year').textContent=new Date().getFullYear();

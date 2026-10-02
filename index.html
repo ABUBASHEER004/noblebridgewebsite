@@ -1,357 +1,204 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="NobleBridge Global — technology, trading, delivery and marketing solutions from Kaduna, Nigeria.">
-  <title>NobleBridge Global | Technology • Trading • Marketing</title>
-  <link rel="icon" href="assets/noblebridge-logo.jpg">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d2440" />
+  <meta name="description" content="NobleBridge Global — technology, digital commerce, sourcing, delivery and marketing from Kaduna, Nigeria." />
+  <title>NobleBridge Global | Technology • Trade • Marketing</title>
+  <link rel="icon" href="assets/noblebridge-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="announcement">
-    <div class="container announcement-inner">
-      <span><strong>NEW:</strong> Technology, trading, delivery & marketing — connected.</span>
-      <a href="#order">Order / Request a quote <span>→</span></a>
+  <div class="topbar">
+    <div class="shell topbar-inner">
+      <span><span class="status-dot"></span> Kaduna, Nigeria</span>
+      <span class="topbar-note">Connecting opportunities. Delivering excellence.</span>
+      <a href="mailto:gidaservicess@gmail.com">gidaservicess@gmail.com</a>
     </div>
   </div>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
+  <header class="site-header" id="top">
+    <div class="shell nav-wrap">
       <a class="brand" href="#top" aria-label="NobleBridge Global home">
-        <span class="brand-mark">
-          <span>N</span><span>B</span>
-        </span>
-        <span class="brand-copy">
-          <strong>NOBLEBRIDGE</strong>
-          <small>GLOBAL</small>
-        </span>
+        <img src="assets/noblebridge-logo.png" alt="NobleBridge Global" />
       </a>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#shop">Shop</a>
-        <a href="#projects">Portfolio</a>
-        <a href="#trust">Trust</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#technology">Technology</a>
+        <a href="#trade">Trade &amp; Commerce</a>
+        <a href="#marketing">Marketing</a>
+        <a href="#projects">Projects</a>
         <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Talk to us</a>
+        <a class="nav-cta" href="#contact">Start a conversation <span>↗</span></a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero">
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="pulse-dot"></span> BUILT FOR PEOPLE • BUILT FOR BUSINESS</div>
-          <h1>One bridge for <em>technology</em>, trade & growth.</h1>
-          <p class="hero-lead">NobleBridge Global brings digital innovation, everyday products, delivery and marketing into one dependable business experience.</p>
+      <div class="hero-grid"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> NOBLEBRIDGE GLOBAL</div>
+          <h1>One bridge.<br><em>Three powerful</em><br>ways to move business forward.</h1>
+          <p class="hero-lead">We build digital products, source and deliver quality goods, and help brands reach the right customers — with one connected standard of service.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#order">Start an order <span>↗</span></a>
-            <a class="btn btn-ghost" href="#services">Explore services</a>
+            <a class="btn btn-primary" href="#technology">Explore our capabilities <span>↗</span></a>
+            <a class="btn btn-ghost" href="#contact">Request a quote</a>
           </div>
           <div class="hero-proof">
-            <div><strong>03</strong><span>Core business pillars</span></div>
-            <div><strong>02</strong><span>Featured digital projects</span></div>
-            <div><strong>24/7</strong><span>Online enquiry channel</span></div>
+            <div><strong>01</strong><span>Technology<br>&amp; Innovation</span></div>
+            <div><strong>02</strong><span>Trade<br>&amp; Commerce</span></div>
+            <div><strong>03</strong><span>Marketing<br>&amp; Growth</span></div>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="visual-card main-card">
-            <div class="visual-top">
-              <span class="mini-label">NOBLEBRIDGE / 01</span>
-              <span class="status">LIVE</span>
-            </div>
-            <div class="visual-word">BRIDGE<span>.</span></div>
-            <p>Connecting ideas, products and people.</p>
-            <div class="visual-lines"><i></i><i></i><i></i></div>
+        <div class="hero-visual reveal delay-1" aria-label="NobleBridge business overview">
+          <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+          <div class="bridge-card">
+            <div class="bridge-mark">NB</div>
+            <div class="bridge-label">GLOBAL CONNECTOR</div>
+            <div class="bridge-title">Ideas → Products → People</div>
+            <div class="bridge-foot"><span>KA / NG</span><span class="gold-line"></span><span>2026</span></div>
           </div>
-          <div class="floating-card product-float">
-            <img src="assets/business-storefront.jpeg" alt="NobleBridge Global storefront and business presence">
-            <div><small>TRADING</small><strong>Products + delivery</strong></div>
-          </div>
-          <div class="floating-card tech-float">
-            <span class="icon-circle">⌘</span>
-            <div><small>TECHNOLOGY</small><strong>Web • Apps • Cybersecurity</strong></div>
-          </div>
-          <div class="hero-stamp">NG<br><small>KADUNA</small></div>
+          <div class="floating-card card-tech"><span class="icon icon-tech"></span><b>Digital</b><small>Products &amp; systems</small></div>
+          <div class="floating-card card-trade"><span class="icon icon-bag"></span><b>Commerce</b><small>Sourcing &amp; delivery</small></div>
+          <div class="floating-card card-marketing"><span class="icon icon-megaphone"></span><b>Growth</b><small>Online &amp; onsite</small></div>
         </div>
       </div>
     </section>
 
-    <section class="ticker">
-      <div class="ticker-track">
-        <span>WEB DESIGN</span><b>✦</b><span>APP DEVELOPMENT</span><b>✦</b><span>CYBERSECURITY</span><b>✦</b><span>DEVICES</span><b>✦</b><span>FASHION & FABRICS</span><b>✦</b><span>HOME & BEDDING</span><b>✦</b><span>MARKETING</span><b>✦</b><span>DELIVERY</span><b>✦</b>
-      </div>
-    </section>
-
-    <section id="services" class="section services">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="kicker">THE NOBLEBRIDGE MODEL</span>
-            <h2>Different needs. <span>One trusted partner.</span></h2>
-          </div>
-          <p>Three clear business pillars make it easy to find exactly what you need — while keeping the experience connected from discovery to delivery.</p>
-        </div>
-
-        <div class="pillar-grid">
-          <article class="pillar pillar-tech">
-            <div class="pillar-number">01</div>
-            <div class="icon-box">⌘</div>
-            <span class="pill-label">TECH / INNOVATION</span>
-            <h3>Build digital products that work.</h3>
-            <p>Professional websites, applications and cybersecurity-focused solutions for businesses, organisations and ideas ready to move forward.</p>
-            <ul>
-              <li>Website design & development</li>
-              <li>Mobile / web application development</li>
-              <li>Cybersecurity & digital protection</li>
-              <li>Digital product consulting</li>
-            </ul>
-            <a href="#order" class="text-link" data-service="Technology / Innovation">Discuss a project →</a>
-          </article>
-
-          <article class="pillar pillar-trade">
-            <div class="pillar-number">02</div>
-            <div class="icon-box">◇</div>
-            <span class="pill-label">TRADING + DELIVERY</span>
-            <h3>Shop products without the stress.</h3>
-            <p>From laptops and phones to fashion, bedding, kitchen items, shoes and furniture — browse, ask, order and arrange delivery.</p>
-            <ul>
-              <li>Laptops & phones</li>
-              <li>Wears, fabrics & bags</li>
-              <li>Beddings & kitchen utensils</li>
-              <li>Shoes & furniture</li>
-            </ul>
-            <a href="#shop" class="text-link">Browse products →</a>
-          </article>
-
-          <article class="pillar pillar-marketing">
-            <div class="pillar-number">03</div>
-            <div class="icon-box">↗</div>
-            <span class="pill-label">MARKETING</span>
-            <h3>Put your product in front of people.</h3>
-            <p>Online and onsite marketing support designed to help products and services become easier to discover, understand and buy.</p>
-            <ul>
-              <li>Online product promotion</li>
-              <li>Onsite / field marketing</li>
-              <li>Campaign and launch support</li>
-              <li>Content & promotional strategy</li>
-            </ul>
-            <a href="#order" class="text-link" data-service="Marketing">Plan a campaign →</a>
-          </article>
+    <section class="section intro-section">
+      <div class="shell intro-grid">
+        <div class="section-kicker reveal">THE NOBLEBRIDGE MODEL</div>
+        <div class="intro-copy reveal delay-1">
+          <h2>Built to connect <span>capability with opportunity.</span></h2>
+          <p>NobleBridge Global is structured around three distinct business lines, so every engagement gets the right expertise, process and attention — whether you need a digital product, a physical order or a growth campaign.</p>
         </div>
       </div>
     </section>
 
-    <section id="shop" class="section shop-section">
-      <div class="container">
-        <div class="section-head compact">
-          <div>
-            <span class="kicker">TRADING / SHOP</span>
-            <h2>Products for <span>everyday living.</span></h2>
-          </div>
-          <a class="btn btn-dark" href="#order">Request any item →</a>
+    <section class="section division division-tech" id="technology">
+      <div class="shell">
+        <div class="division-head reveal">
+          <div><span class="division-number">01 /</span><span class="eyebrow">TECHNOLOGY &amp; INNOVATION</span></div>
+          <h2>We turn ideas into <em>useful digital products.</em></h2>
+          <p>From product strategy to interface design and development, we create digital experiences that are practical, scalable and built around real users.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card featured reveal">
+            <div class="cap-icon"><span class="icon icon-code"></span></div>
+            <div><span class="mini-label">01 / PRODUCT BUILD</span><h3>Web &amp; application development</h3><p>Modern websites, business platforms and mobile applications designed around your workflow and customers.</p></div>
+            <a href="#contact" class="arrow-link">Discuss a project <span>↗</span></a>
+          </article>
+          <article class="capability-card reveal delay-1"><div class="cap-icon"><span class="icon icon-shield"></span></div><span class="mini-label">02 / PROTECTION</span><h3>Cybersecurity</h3><p>Practical security thinking for digital products, websites, accounts and business operations.</p></article>
+          <article class="capability-card reveal delay-2"><div class="cap-icon"><span class="icon icon-spark"></span></div><span class="mini-label">03 / INNOVATION</span><h3>Digital product thinking</h3><p>We shape concepts into clear user journeys, useful features and experiences people can actually adopt.</p></article>
         </div>
 
-        <div class="shop-grid">
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-shoes.jpg" alt="Shoes product sample"><span class="product-tag">POPULAR</span></div>
-            <div class="product-body"><span>FOOTWEAR</span><h3>Shoes & sneakers</h3><p>Ask for available styles, sizes and current prices.</p><button class="order-btn" data-item="Shoes / sneakers">Order item →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-fashion-purple.jpg" alt="Purple fashion wear"><span class="product-tag">FASHION</span></div>
-            <div class="product-body"><span>WEARS</span><h3>Wears & fabrics</h3><p>Fashion pieces and fabrics for different occasions.</p><button class="order-btn" data-item="Wears / fabrics">Order item →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-fabric.jpg" alt="Fabric product sample"><span class="product-tag">FABRICS</span></div>
-            <div class="product-body"><span>TEXTILES</span><h3>Fabrics & textiles</h3><p>Ask for current patterns, quantities and sourcing options.</p><button class="order-btn" data-item="Fabrics / textiles">Order fabric →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-bedding.jpg" alt="Bedding product sample"><span class="product-tag">HOME</span></div>
-            <div class="product-body"><span>BEDDING</span><h3>Beddings & bedroom items</h3><p>Comfort-focused home products with delivery available.</p><button class="order-btn" data-item="Beddings / bedroom items">Order item →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-furniture.jpg" alt="Furniture product sample"><span class="product-tag">HOME</span><img class="product-corner" src="assets/product-furniture-sale.jpg" alt="Furniture promotion sample"></div>
-            <div class="product-body"><span>FURNITURE</span><h3>Furniture</h3><p>Ask for current designs, availability and delivery options.</p><button class="order-btn" data-item="Furniture">Order item →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-bags.jpg" alt="Bags product sample"><span class="product-tag">STYLE</span></div>
-            <div class="product-body"><span>ACCESSORIES</span><h3>Bags & accessories</h3><p>Product sourcing for personal and business needs.</p><button class="order-btn" data-item="Bags / accessories">Order item →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-formalwear.jpg" alt="Fashion product sample"><span class="product-tag">STYLE</span></div>
-            <div class="product-body"><span>APPAREL</span><h3>Everyday clothing</h3><p>Send your preferred style and we can help source it.</p><button class="order-btn" data-item="Clothing / apparel">Order item →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-device.png" alt="Laptop and device product sample"><span class="product-tag">DEVICES</span></div>
-            <div class="product-body"><span>TECH TRADE</span><h3>Laptops & phones</h3><p>Share the model or budget and we will help source the right option.</p><button class="order-btn" data-item="Laptop / phone">Request device →</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-image"><img src="assets/product-kitchen.jpeg" alt="Kitchen household product sample"><span class="product-tag">HOME</span></div>
-            <div class="product-body"><span>HOUSEHOLD</span><h3>Kitchen & household</h3><p>Ask for available kitchen and household items and delivery options.</p><button class="order-btn" data-item="Kitchen / household items">Order item →</button></div>
-          </article>
+        <div class="project-showcase reveal" id="projects">
+          <div class="project-copy">
+            <span class="mini-label">SELECTED PROJECT / 01</span>
+            <h3>Gida Services</h3>
+            <p class="project-tagline">Local services, brought closer.</p>
+            <p>A marketplace concept connecting customers with trusted local professionals. The experience supports service discovery, provider profiles, direct communication and booking/request flows.</p>
+            <div class="tech-pills"><span>Flutter</span><span>Dart</span><span>Firebase</span><span>Marketplace</span></div>
+            <a class="text-link" href="#contact">Build something similar <span>↗</span></a>
+          </div>
+          <div class="project-device">
+            <div class="device-frame"><img src="assets/project-gida-services.png" alt="Gida Services application screen" /></div>
+            <div class="device-badge"><img src="assets/project-gida-logo.png" alt="Gida Services logo" /><span>Real project interface</span></div>
+          </div>
+          <div class="project-side-shot"><img src="assets/project-gida-splash.png" alt="Gida Services splash screen" /></div>
         </div>
 
-        <div class="device-strip">
-          <div class="device-copy">
-            <span class="kicker">DEVICES</span>
-            <h3>Laptops & phones, sourced around your need.</h3>
-            <p>Tell us the brand, model, budget or specification you are looking for. We’ll respond with available options and pricing.</p>
-            <a class="btn btn-primary" href="#order" data-item-link="Laptop / phone">Request a device</a>
+        <div class="project-showcase project-second reveal">
+          <div class="project-copy">
+            <span class="mini-label">SELECTED PROJECT / 02</span>
+            <h3>Hikimar Yara</h3>
+            <p class="project-tagline">Hausa stories for young minds.</p>
+            <p>A child-friendly educational storytelling experience with Hausa stories organised by themes such as Tarbiyya, Addini and Dabbobi, with audio storytelling and approachable visual design.</p>
+            <div class="tech-pills"><span>Flutter</span><span>Dart</span><span>Audio</span><span>Education</span></div>
+            <a class="text-link" href="#contact">Explore a digital brief <span>↗</span></a>
           </div>
-          <div class="device-visual"><div class="device-screen"></div><div class="device-base"></div><span>TECH<br>TRADE</span></div>
+          <div class="story-art"><div class="story-glow"></div><img src="assets/project-hikimar-yara.png" alt="Hikimar Yara Hausa children's education app screen" /></div>
+          <div class="story-notes"><div><b>Hausa-first</b><span>Local language content</span></div><div><b>Audio-led</b><span>Storytelling experience</span></div><div><b>Child-friendly</b><span>Simple visual language</span></div></div>
         </div>
       </div>
     </section>
 
-    <section class="promo">
-      <div class="container promo-inner">
-        <div class="promo-badge">PROMO<br>CENTRE</div>
-        <div>
-          <span class="kicker light">CURRENT OFFERS</span>
-          <h2>Ask about our latest <span>promos & discounts.</span></h2>
-          <p>Availability and pricing change by product and campaign. Contact NobleBridge Global for current offers, bundle opportunities and delivery rates.</p>
+    <section class="section division division-trade" id="trade">
+      <div class="shell">
+        <div class="division-head trade-head reveal">
+          <div><span class="division-number">02 /</span><span class="eyebrow">TRADE &amp; E-COMMERCE</span></div>
+          <h2>Quality goods. <em>Clear ordering. Reliable delivery.</em></h2>
+          <p>We help customers source everyday products across personal, home and business needs — with direct ordering and delivery coordination.</p>
         </div>
-        <a class="btn btn-light" href="#order">Check today's offer →</a>
+        <div class="commerce-layout">
+          <div class="commerce-visual reveal"><div class="commerce-ring"></div><div class="commerce-card"><span class="mini-label">SHOP • SOURCE • DELIVER</span><h3>From request<br>to doorstep.</h3><p>Tell us what you need. We source, confirm, coordinate and arrange delivery.</p><a href="#contact" class="btn btn-dark">Place an enquiry <span>↗</span></a></div></div>
+          <div class="product-grid reveal delay-1">
+            <div class="product-tile"><div class="tile-icon"><span class="icon icon-laptop"></span></div><h4>Laptops &amp; phones</h4><p>Devices for work, study and everyday use.</p></div>
+            <div class="product-tile"><div class="tile-icon"><span class="icon icon-fabric"></span></div><h4>Fabrics &amp; wears</h4><p>Fabrics, fashion and everyday clothing needs.</p></div>
+            <div class="product-tile"><div class="tile-icon"><span class="icon icon-home"></span></div><h4>Furniture &amp; bedding</h4><p>Home pieces, comfort and practical interiors.</p></div>
+            <div class="product-tile"><div class="tile-icon"><span class="icon icon-kitchen"></span></div><h4>Kitchen &amp; household</h4><p>Useful items for the home and daily living.</p></div>
+            <div class="product-tile"><div class="tile-icon"><span class="icon icon-shoe"></span></div><h4>Shoes &amp; accessories</h4><p>Style essentials and selected accessories.</p></div>
+            <div class="product-tile"><div class="tile-icon"><span class="icon icon-box"></span></div><h4>Special sourcing</h4><p>Need something specific? Ask and we will discuss it.</p></div>
+          </div>
+        </div>
+        <div class="order-strip reveal"><div><span class="mini-label">ORDERING</span><strong>Request → Confirm → Pay → Deliver</strong></div><a href="#contact" class="btn btn-primary">Start an order <span>↗</span></a></div>
       </div>
     </section>
 
-    <section id="projects" class="section portfolio">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="kicker">DIGITAL PORTFOLIO</span>
-            <h2>Projects that show <span>what we build.</span></h2>
-          </div>
-          <p>Selected projects supplied for NobleBridge Global’s portfolio — presented with their real screenshots.</p>
+    <section class="section division division-marketing" id="marketing">
+      <div class="shell">
+        <div class="division-head reveal">
+          <div><span class="division-number">03 /</span><span class="eyebrow">MARKETING &amp; GROWTH</span></div>
+          <h2>Make your offer visible — <em>online and onsite.</em></h2>
+          <p>We help businesses present products and services clearly, reach audiences and create promotional campaigns that support real commercial goals.</p>
         </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-media"><img src="assets/project-gida-services.jpg" alt="Gida Services application screenshot"><div class="project-badge"><img src="assets/project-gida-logo.jpg" alt="Gida Services logo"></div><div class="project-mini-shot"><img src="assets/project-gida-splash.jpg" alt="Gida Services secondary screenshot"></div></div>
-            <div class="project-body">
-              <div class="project-top"><span>01 / MARKETPLACE</span><span>Flutter · Dart · Firebase</span></div>
-              <h3>Gida Services</h3>
-              <p>A practical local-services marketplace that helps people discover trusted professionals and service providers, request a service, communicate directly and get things done without unnecessary friction.</p>
-              <div class="feature-chips"><span>Service discovery</span><span>Provider profiles</span><span>Direct communication</span><span>Simple requests</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reverse">
-            <div class="project-media"><img src="assets/project-hikimar-yara.jpg" alt="Hikimar Yara children's storytelling app screenshot"></div>
-            <div class="project-body">
-              <div class="project-top"><span>02 / EDUCATION</span><span>Flutter · Dart · Audio</span></div>
-              <h3>Hikimar Yara</h3>
-              <p>A Hausa children’s storytelling and learning experience built around culturally relevant stories, friendly visuals and audio storytelling for young learners and families.</p>
-              <div class="feature-chips"><span>Hausa stories</span><span>Tarbiyya</span><span>Addini</span><span>Dabbobi</span><span>Audio storytelling</span></div>
-            </div>
-          </article>
+        <div class="marketing-grid">
+          <article class="marketing-card dark reveal"><div class="big-icon"><span class="icon icon-megaphone"></span></div><span class="mini-label">DIGITAL REACH</span><h3>Online marketing</h3><p>Social content, product presentation, campaign support and digital visibility.</p><a href="#contact">Plan a campaign <span>↗</span></a></article>
+          <article class="marketing-card light reveal delay-1"><div class="big-icon"><span class="icon icon-store"></span></div><span class="mini-label">LOCAL PRESENCE</span><h3>Onsite marketing</h3><p>Practical promotion for businesses, products, services, events and physical locations.</p><a href="#contact">Promote your business <span>↗</span></a></article>
+          <article class="marketing-card gold reveal delay-2"><div class="big-icon"><span class="icon icon-target"></span></div><span class="mini-label">PROMOTIONS</span><h3>Offers &amp; discounts</h3><p>Structure promotional messages, product bundles and time-sensitive offers that are easy to understand.</p><a href="#contact">Create an offer <span>↗</span></a></article>
         </div>
       </div>
     </section>
 
-    <section id="trust" class="section trust-section">
-      <div class="container trust-grid">
-        <div class="trust-copy">
-          <span class="kicker">TRUST & BUSINESS DETAILS</span>
-          <h2>A business presence built to feel <span>real.</span></h2>
-          <p>Clear contact channels, a visible business document preview, real project screenshots and a straightforward ordering flow help customers know who they are dealing with.</p>
-          <div class="trust-list">
-            <div><b>✓</b><span>Business identity & contact details are clearly displayed.</span></div>
-            <div><b>✓</b><span>Technology work is supported by real project examples.</span></div>
-            <div><b>✓</b><span>Product orders can be requested with delivery details.</span></div>
-            <div><b>✓</b><span>Promotional enquiries can be handled online or onsite.</span></div>
-          </div>
-        </div>
-        <div class="document-card">
-          <div class="business-photo"><img src="assets/business-storefront.jpeg" alt="NobleBridge Global storefront"></div>
-          <div class="document-head"><span>CAC DOCUMENT</span><button class="view-doc" id="openCac">View full preview ↗</button></div>
-          <div class="document-frame"><img src="assets/cac-document.jpg" alt="Provided CAC document preview"></div>
-          <small>Preview from the document image supplied for this website. Use the viewer to enlarge it.</small>
-        </div>
+    <section class="section trust-section" id="about">
+      <div class="shell trust-grid">
+        <div class="trust-copy reveal"><span class="eyebrow">BUSINESS IDENTITY</span><h2>Built with a <em>clear standard.</em></h2><p>NobleBridge Global brings technology, commerce and marketing under one professional business identity. The lines are distinct, but the service standard stays connected.</p><div class="trust-list"><div><span>01</span><b>Clear communication</b><small>Understand the brief before work begins.</small></div><div><span>02</span><b>Practical delivery</b><small>Focus on useful outcomes, not noise.</small></div><div><span>03</span><b>Professional presentation</b><small>Every touchpoint should build confidence.</small></div></div></div>
+        <div class="cac-card reveal delay-1"><div class="cac-top"><span class="mini-label">BUSINESS DOCUMENT</span><span class="verified-pill">Provided document</span></div><div class="cac-preview"><img src="assets/cac-document.png" alt="NobleBridge Global CAC certificate" /></div><div class="cac-bottom"><div><h3>Certificate of Registration</h3><p>View the supplied CAC document for business registration details.</p></div><button class="btn btn-dark" type="button" data-lightbox="assets/cac-document.png">View document <span>↗</span></button></div></div>
       </div>
     </section>
 
-    <section id="order" class="section order-section">
-      <div class="container order-grid">
-        <div>
-          <span class="kicker">ORDER / QUOTE / DELIVERY</span>
-          <h2>Tell us what you need. <span>We’ll take it from there.</span></h2>
-          <p>Use the form to request a product, technology project or marketing service. The form prepares a WhatsApp message with your details.</p>
-          <div class="contact-quick">
-            <a href="tel:+2349058961160"><span>☎</span><div><small>CALL</small><strong>0905 896 1160</strong></div></a>
-            <a href="tel:+2348182423905"><span>☎</span><div><small>CALL</small><strong>0818 242 3905</strong></div></a>
-            <a href="mailto:gidaservicess@gmail.com"><span>✉</span><div><small>EMAIL</small><strong>gidaservicess@gmail.com</strong></div></a>
-          </div>
-        </div>
-        <form class="order-form" id="orderForm">
-          <div class="form-row">
-            <label>Name<input name="name" required placeholder="Your name"></label>
-            <label>Phone<input name="phone" required placeholder="080..."></label>
-          </div>
-          <label>What do you need?
-            <select name="type" id="requestType">
-              <option>Product order</option>
-              <option>Technology / Innovation project</option>
-              <option>Marketing service</option>
-              <option>Delivery / product sourcing</option>
-              <option>General enquiry</option>
-            </select>
-          </label>
-          <label>Item / service<input name="item" id="itemField" placeholder="e.g. laptop, website, shoes, marketing campaign"></label>
-          <div class="form-row">
-            <label>Quantity<input name="quantity" placeholder="1"></label>
-            <label>Preferred delivery area<input name="location" placeholder="Malali, Kaduna..."></label>
-          </div>
-          <label>Details<textarea name="details" rows="4" placeholder="Tell us your preferred model, budget, size, project goals, deadline, etc."></textarea></label>
-          <button class="btn btn-primary btn-wide" type="submit">Send request on WhatsApp ↗</button>
-          <p class="form-note">You can also call or email directly. Product availability and delivery pricing are confirmed before payment.</p>
+    <section class="section contact-section" id="contact">
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal"><span class="eyebrow">LET'S CONNECT</span><h2>Have a need?<br><em>Bring it to the bridge.</em></h2><p>Tell us whether your request is technology, trade/e-commerce or marketing. We will route the enquiry to the right service line.</p><div class="contact-details"><a href="tel:+2349058961160"><span class="contact-icon"><span class="icon icon-phone"></span></span><span><small>CALL / WHATSAPP</small>0905 896 1160</span></a><a href="tel:+2348182423905"><span class="contact-icon"><span class="icon icon-phone"></span></span><span><small>SECOND LINE</small>0818 242 3905</span></a><a href="mailto:gidaservicess@gmail.com"><span class="contact-icon"><span class="icon icon-mail"></span></span><span><small>EMAIL</small>gidaservicess@gmail.com</span></a><div class="address"><span class="contact-icon"><span class="icon icon-pin"></span></span><span><small>LOCATION</small>Benin Crescent, Malali, Kaduna, Nigeria</span></div></div></div>
+        <form class="contact-form reveal delay-1" id="contactForm">
+          <div class="form-top"><span>START AN ENQUIRY</span><span>01 / 03</span></div>
+          <label>What do you need?<select name="service" required><option value="">Select a service line</option><option>Technology &amp; Innovation</option><option>Trade &amp; E-commerce</option><option>Marketing &amp; Growth</option><option>Something else</option></select></label>
+          <div class="form-row"><label>Your name<input name="name" required placeholder="Full name" /></label><label>Phone / WhatsApp<input name="phone" required placeholder="080…" /></label></div>
+          <label>Tell us about it<textarea name="message" required rows="5" placeholder="Briefly describe what you need, product, project or campaign…"></textarea></label>
+          <button class="btn btn-primary btn-full" type="submit">Send enquiry on WhatsApp <span>↗</span></button>
+          <p class="form-note">Your message will open in WhatsApp with the details you provide.</p>
         </form>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="container about-grid">
-        <div class="about-brand">
-          <div class="big-monogram">NB</div>
-          <span>NOBLEBRIDGE GLOBAL</span>
-        </div>
-        <div>
-          <span class="kicker">ABOUT NOBLEBRIDGE GLOBAL</span>
-          <h2>Ideas. Products. Digital solutions. <span>Connected.</span></h2>
-          <p>NobleBridge Global operates across technology and innovation, buying and selling, delivery and marketing — giving individuals and businesses one place to discover solutions, source products and build digital experiences.</p>
-          <div class="address-box"><b>Based in</b><span>Benin Crescent, Malali, Kaduna, Nigeria</span></div>
-        </div>
       </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#top"><span class="brand-mark"><span>N</span><span>B</span></span><span class="brand-copy"><strong>NOBLEBRIDGE</strong><small>GLOBAL</small></span></a>
-        <p class="footer-note">Technology • Trading • Marketing<br>Products delivered to you.</p>
-      </div>
-      <div><span class="footer-title">CONTACT</span><a href="tel:+2349058961160">0905 896 1160</a><a href="tel:+2348182423905">0818 242 3905</a><a href="mailto:gidaservicess@gmail.com">gidaservicess@gmail.com</a></div>
-      <div><span class="footer-title">LOCATION</span><span>Benin Crescent, Malali</span><span>Kaduna, Nigeria</span><a href="https://facebook.com/gidaserv" target="_blank" rel="noopener">@gidaserv on Facebook ↗</a></div>
-      <div><span class="footer-title">QUICK LINKS</span><a href="#shop">Shop</a><a href="#projects">Portfolio</a><a href="#order">Order / Quote</a><a href="#trust">Trust & CAC</a></div>
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div><img src="assets/noblebridge-logo.png" alt="NobleBridge Global" class="footer-logo" /><p>Technology • Trade • Marketing</p></div>
+      <div><span class="footer-label">EXPLORE</span><a href="#technology">Technology</a><a href="#trade">Trade &amp; Commerce</a><a href="#marketing">Marketing</a><a href="#projects">Projects</a></div>
+      <div><span class="footer-label">CONNECT</span><a href="mailto:gidaservicess@gmail.com">gidaservicess@gmail.com</a><a href="https://facebook.com/gidaserv" target="_blank" rel="noreferrer">Facebook @gidaserv</a><a href="tel:+2349058961160">0905 896 1160</a></div>
     </div>
-    <div class="container footer-bottom"><span>© <span id="year"></span> NobleBridge Global. All rights reserved.</span><span>Designed as a premium single-page business experience.</span></div>
+    <div class="shell footer-bottom"><span>© <span id="year"></span> NobleBridge Global. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
   </footer>
 
-  <div class="modal" id="cacModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close="true"></div>
-    <div class="modal-card">
-      <button class="modal-close" id="closeCac" aria-label="Close">×</button>
-      <div class="modal-title"><span>CAC DOCUMENT PREVIEW</span><small>Provided business document</small></div>
-      <div class="modal-image"><img src="assets/cac-document.jpg" alt="CAC document enlarged preview"></div>
-    </div>
-  </div>
-
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="Close">×</button><img id="lightboxImage" src="" alt="Expanded document" /></div>
+  <div class="toast" id="toast">Opening WhatsApp…</div>
   <script src="script.js"></script>
 </body>
 </html>
